@@ -10,7 +10,7 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  *
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -19,14 +19,15 @@
 /**
  * Slider admin controller
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
+ * @author      Rajasingh and Manikandan D
  */
 class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_Controller_Action
 {
     
     /**
-     * init the slider
+     * initiate the slider
      *
      * @access protected
      * @return Ultimate_Slider_Model_Slider
@@ -46,7 +47,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function indexAction() {
         $this->loadLayout();
@@ -59,7 +59,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function gridAction() {
         $this->loadLayout()->renderLayout();
@@ -70,7 +69,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function editAction() {
         $sliderId = $this->getRequest()->getParam('id');
@@ -108,7 +106,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function newAction() {
         $this->_forward('edit');
@@ -119,7 +116,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function redirectAction() {
         $baseurl = Mage::getBaseUrl();
@@ -131,14 +127,9 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function saveAction() {
         if ($data = $this->getRequest()->getPost('slider')) {
-  
-        // print_r($data);
-        // print_r($_FILES);
-        // exit;
             
             try {
                 
@@ -230,16 +221,13 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
         }
         Mage::getSingleton('adminhtml/session')->addError(Mage::helper('ultimate_slider')->__('Unable to find slider to save.'));
         $this->_redirect('*/*/');
-    }
-    
-    
+    }    
     
     /**
      * delete slider - action
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function deleteAction() {
         if ($this->getRequest()->getParam('id') > 0) {
@@ -273,18 +261,11 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
         $this->_redirect('*/*/');
     }
     
-    // ------------------------------------------------ #
-    // Running Successfully - Updated as on Nov 6, 2015 #
-    // ------------------------------------------------ #
-    
-    
-    
     /**
      * mass delete slider - action
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function massDeleteAction() {
         $sliderIds = $this->getRequest()->getParam('slider');
@@ -328,7 +309,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function massStatusAction() {
         $sliderIds = $this->getRequest()->getParam('slider');
@@ -358,7 +338,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function exportCsvAction() {
         $fileName = 'slider.csv';
@@ -371,7 +350,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function exportExcelAction() {
         $fileName = 'slider.xls';
@@ -384,7 +362,6 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function exportXmlAction() {
         $fileName = 'slider.xml';
@@ -397,15 +374,8 @@ class Ultimate_Slider_Adminhtml_Slider_SliderController extends Mage_Adminhtml_C
      *
      * @access protected
      * @return boolean
-     * @author Manikandan D
      */
     protected function _isAllowed() {
         return Mage::getSingleton('admin/session')->isAllowed('ultimate_slider/slider');
-    }
-    
-    // ------------------------------------------------ #
-    // Running Successfully - Updated as on Nov 6, 2015 #
-    // ------------------------------------------------ #
-    
-    
+    }        
 }

@@ -9,19 +9,21 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  * 
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
  */
+
 /**
  * @var $installer Mage_Core_Model_Resource_Setup
  */
     $installer = $this;
+
 /**
- * Slider module install script
+ * Ultimate_Slider module install script
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
  */
     $this->startSetup();
@@ -68,7 +70,7 @@
         array('published_at'),
         array('type' => Varien_Db_Adapter_Interface::INDEX_TYPE_INDEX)
     )
-    ->setComment('Slider item');
+    ->setComment('Ultimate Slider');
     $this->getConnection()->createTable($table);
 
 $this->endSetup();

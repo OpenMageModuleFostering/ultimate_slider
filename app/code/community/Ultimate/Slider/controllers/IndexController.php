@@ -9,7 +9,7 @@
 * It is also available through the world-wide-web at this URL:
 * http://opensource.org/licenses/mit-license.php
 *
-* @category       Ultimate
+* @category       Images & Media
 * @package        Ultimate_Slider
 * @copyright      Copyright (c) 2015
 * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -17,11 +17,17 @@
 /**
 * Slider front contrller
 *
-* @category    Ultimate
+* @category    Images & Media
 * @package     Ultimate_Slider
+* @author      Rajasingh and Manikandan D
 */
 class Ultimate_Slider_IndexController extends Mage_Core_Controller_Front_Action
-{
+{   
+    /**
+     * get the layout and template on the ultimate_slider page
+     *
+     * @access public
+     */
 	public function indexAction(){
 
 		$this->loadLayout();

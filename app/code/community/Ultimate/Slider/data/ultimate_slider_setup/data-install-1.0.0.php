@@ -9,7 +9,7 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  * 
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -17,8 +17,9 @@
 /**
  * Slider module install script
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
+ * @author      Rajasingh and Manikandan D
  */
 
 /**
@@ -35,7 +36,6 @@ $model = Mage::getModel('ultimate_slider/slider');
  * Set up data rows
  */
 $dataRows = array(
-
     array(
             'title'         => 'Slider 1',
             'alt_text'      => 'Slider 1 Alt Text',
@@ -65,7 +65,7 @@ $dataRows = array(
 );    
 
 /**
- * Generate news items
+ * Generate slider items
  */
 foreach ($dataRows as $data) {
     $model->setData($data)->setOrigData()->save();

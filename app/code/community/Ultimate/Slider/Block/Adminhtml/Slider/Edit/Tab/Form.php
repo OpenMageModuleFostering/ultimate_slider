@@ -9,7 +9,7 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  * 
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -17,9 +17,9 @@
 /**
  * Slider edit form tab
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
- * @author      Manikandan D
+ * @author      Rajasingh and Manikandan D
  */
 class Ultimate_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtml_Block_Widget_Form
 {
@@ -92,10 +92,6 @@ class Ultimate_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtm
             )
         );
 
-
-        #--------------------------------------#
-        ## Check This function and operations ##
-        #--------------------------------------#
         $formValues = Mage::registry('current_slider')->getDefaultValues();
         if (!is_array($formValues)) {
             $formValues = array();
@@ -105,10 +101,7 @@ class Ultimate_Slider_Block_Adminhtml_Slider_Edit_Tab_Form extends Mage_Adminhtm
             Mage::getSingleton('adminhtml/session')->setSliderData(null);
         } elseif (Mage::registry('current_slider')) {
             $formValues = array_merge($formValues, Mage::registry('current_slider')->getData());
-        }
-        #--------------------------------------#
-        ## Check This function and operations ##
-        #--------------------------------------#    
+        }  
 
         $form->setValues($formValues);
         return parent::_prepareForm();

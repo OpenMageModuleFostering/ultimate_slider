@@ -9,7 +9,7 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  * 
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -17,8 +17,9 @@
 /**
  * Slider helper
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
+ * @author      Rajasingh and Manikandan D
  */
 class Ultimate_Slider_Helper_Slider extends Mage_Core_Helper_Abstract
 {
@@ -28,7 +29,6 @@ class Ultimate_Slider_Helper_Slider extends Mage_Core_Helper_Abstract
      *
      * @access public
      * @return string
-     * @author Manikandan D
      */
     public function getSlidersUrl()
     {
@@ -43,7 +43,6 @@ class Ultimate_Slider_Helper_Slider extends Mage_Core_Helper_Abstract
      *
      * @access public
      * @return bool
-     * @author Manikandan D
      */
     public function getUseBreadcrumbs()
     {

@@ -9,7 +9,7 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  * 
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -17,8 +17,9 @@
 /**
  * Slider admin edit form
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
+ * @author      Rajasingh and Manikandan D
  */
 class Ultimate_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_Widget_Form_Container
 {
@@ -27,7 +28,6 @@ class Ultimate_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_W
      *
      * @access public
      * @return void
-     * @author Manikandan D
      */
     public function __construct()
     {
@@ -65,7 +65,6 @@ class Ultimate_Slider_Block_Adminhtml_Slider_Edit extends Mage_Adminhtml_Block_W
      *
      * @access public
      * @return string
-     * @author Manikandan D
      */
     public function getHeaderText()
     {

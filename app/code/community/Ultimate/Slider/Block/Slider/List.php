@@ -9,7 +9,7 @@
  * It is also available through the world-wide-web at this URL:
  * http://opensource.org/licenses/mit-license.php
  * 
- * @category       Ultimate
+ * @category       Images & Media
  * @package        Ultimate_Slider
  * @copyright      Copyright (c) 2015
  * @license        http://opensource.org/licenses/mit-license.php MIT License
@@ -17,9 +17,9 @@
 /**
  * Slider list block
  *
- * @category    Ultimate
+ * @category    Images & Media
  * @package     Ultimate_Slider
- * @author Manikandan D
+ * @author      Rajasingh and Manikandan D
  */
 class Ultimate_Slider_Block_Slider_List extends Mage_Core_Block_Template
 {
@@ -27,7 +27,6 @@ class Ultimate_Slider_Block_Slider_List extends Mage_Core_Block_Template
      * initialize
      *
      * @access public
-     * @author Manikandan D
      */
     public function _construct()
     {
