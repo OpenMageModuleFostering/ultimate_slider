@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Ultimate_Slider",
+    "type": "magento-module",
+    "license": "MITL",
+    "homepage": "",
+    "description": "Ultimate Image/Video Slider for Madison",
+    "authors": [
+    {
+        "name": "Rajasingh",
+        "email": "rajasingh31@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
