@@ -19,7 +19,7 @@
 <config>
     <menu>
         <ultimate_slider translate="title" module="ultimate_slider">
-            <title>Carousel Slider</title>
+            <title>Ultimate Slider</title>
             <sort_order>65</sort_order>
             <children>
                 <slider translate="title" module="ultimate_slider">

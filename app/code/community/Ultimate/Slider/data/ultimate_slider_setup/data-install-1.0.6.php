@@ -20,6 +20,7 @@
  * @category    Images & Media
  * @package     Ultimate_Slider
  * @author      Rajasingh and Manikandan D
+ * @modified    2015-11-21 04:54:53 PM IST
  */
 
 /**
@@ -50,7 +51,7 @@ $dataRows = array(
             'alt_text'      => 'Slider 2 Alt Text',
             'status'        => '1',
             'image'         => '',
-            'video_url'     => 'http://www.dailymotion.com/embed/video/x3bakq4',
+            'video_url'     => 'http://www.dailymotion.com/embed/video/x3bdmew',
             'published_at'  => '2015-11-06',
          ),
 

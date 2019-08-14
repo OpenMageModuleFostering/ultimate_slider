@@ -21,7 +21,7 @@
     
     <modules>
         <Ultimate_Slider>
-            <version>1.0.0</version>
+            <version>1.0.6</version>
         </Ultimate_Slider>
     </modules>
 
@@ -113,7 +113,10 @@
     <default>
         <ultimate_slider>
             <slider>
+                <enabled>1</enabled>
                 <breadcrumbs>1</breadcrumbs>
+                <items_per_slide></items_per_slide>
+                <roll_slides_active>0</roll_slides_active>
             </slider>
         </ultimate_slider>
     </default>

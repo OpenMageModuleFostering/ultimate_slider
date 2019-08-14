@@ -20,6 +20,7 @@
  * @category    Images & Media
  * @package     Ultimate_Slider
  * @author      Rajasingh and Manikandan D
+ * @modified    2015-11-21 06:41:51 PM IST
  */
 class Ultimate_Slider_Block_Slider_List extends Mage_Core_Block_Template
 {
@@ -37,27 +38,31 @@ class Ultimate_Slider_Block_Slider_List extends Mage_Core_Block_Template
         $this->setSliders($sliders);
     }
 
+    /**
+     * retrieve data to template
+     *
+     * @access public
+     */
     public function retrieveData(){
 
-        # Get full collection of data
-        # ---------------------------
-        # $sliders = Mage::getModel('ultimate_slider/slider')->getCollection()->getData()->getOrder('slider_id', 'asc');
+        if(!Mage::getStoreConfigFlag('ultimate_slider/slider/enabled')){
+            return false;
+        }
 
-        # Get data based on the given where clause
-        # ----------------------------------------
+        if(Mage::getStoreConfig('ultimate_slider/slider/items_per_slide')<=3){
+            $setLimit = 3;
+        } else {
+            $setLimit = Mage::getStoreConfigFlag('ultimate_slider/slider/items_per_slide');
+        }
+        
         $sliders = Mage::getModel('ultimate_slider/slider')->getCollection()
+                         ->setPageSize($setLimit)
                          ->addFieldToFilter('status', array("eq" => "1"))
                          ->addFieldToFilter('published_at', array("lteq" => date("Y-m-d")))
                          ->addOrder('published_at', 'desc')
                          ->getData();
 
-        # SQL query for above code
-        # ------------------------
-        # SELECT * FROM ultimate_slider_slider WHERE `status` = 1 AND `published_at` <= CURDATE() 
-        # ORDER BY `published_at` DESC;
-
-        return $sliders;
-        
+        return $sliders;        
     }
 
 }

@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "MITL",
     "homepage": "",
-    "description": "Ultimate Image/Video Slider for Madison",
+    "description": "Ultimate Image/Video Slider",
     "authors": [
     {
-        "name": "Rajasingh",
-        "email": "rajasingh31@gmail.com"
+        "name": "RSMD Partners",
+        "email": "rsmd.partners@gmail.com"
     }
 ],
     "suggest": {

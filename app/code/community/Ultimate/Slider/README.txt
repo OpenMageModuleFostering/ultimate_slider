@@ -57,3 +57,21 @@ To show this slider on home page or any othe location on your magento Site, you 
 {{block type="ultimate_slider/slider_list" name="slider_list" template="ultimate_slider/slider/list.phtml"}}
 
 Hurray..! You're done..! Happy Coding..!
+
+Release Info: Ultimate_Slider 1.0.6
+-----------------------------------
+# Added Feature of Slider Autoplay
+# Fixed bug of items per slide option in the admin panel.
+# Fixed bug of namespace and module name errors.
+# Fixed bug on active status in the frontend.
+# Fixed bug on sample data of Iframe and Mp4 video.
+# Fixed bug of native coding errors.
+
+Release Info: Ultimate_Slider 1.0.1
+-----------------------------------
+# Revised
+
+Release Info: Ultimate_Slider 1.0.0
+-----------------------------------
+# First Stable Release
+

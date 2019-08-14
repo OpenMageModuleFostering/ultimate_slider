@@ -23,7 +23,6 @@
  */
 class Ultimate_Slider_Helper_Slider extends Mage_Core_Helper_Abstract
 {
-
     /**
      * get the url to the sliders list page
      *
@@ -48,4 +47,5 @@ class Ultimate_Slider_Helper_Slider extends Mage_Core_Helper_Abstract
     {
         return Mage::getStoreConfigFlag('ultimate_slider/slider/breadcrumbs');
     }
+
 }
