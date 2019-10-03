@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Ultimate_Slider",
+    "name": "OpenMageModuleFostering\/Ultimate_Slider",
     "type": "magento-module",
     "license": "MITL",
     "homepage": "",
-    "description": "Ultimate Image/Video Slider",
+    "description": "Ultimate Image\/Video Slider",
     "authors": [
-    {
-        "name": "RSMD Partners",
-        "email": "rsmd.partners@gmail.com"
-    }
-],
+        {
+            "name": "RSMD Partners",
+            "email": "rsmd.partners@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
